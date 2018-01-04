@@ -5,5 +5,8 @@
             "error",
             4
         ]
+    },
+    "env": {
+        "mocha": true
     }
 }
