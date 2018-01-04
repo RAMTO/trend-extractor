@@ -4,7 +4,8 @@
   "description": "A NPM package that defines the most common words or trends",
   "main": "index.js",
   "scripts": {
-    "build": "babel ./src -d ./lib"
+    "build": "npm run lint && babel ./src -d ./lib",
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,9 @@
   "homepage": "https://github.com/RAMTO/trend-extractor#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   }
 }
