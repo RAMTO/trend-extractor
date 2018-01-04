@@ -4,9 +4,10 @@
   "description": "A NPM package that defines the most common words or trends",
   "main": "index.js",
   "scripts": {
-    "build": "npm run lint && babel ./src -d ./lib",
-    "lint": "eslint ./src",
-    "test": "mocha --require babel-core/register"
+    "build": "npm run lint && npm run test && babel ./src -d ./lib",
+    "lint": "eslint ./src ./test",
+    "lint-fix": "eslint ./src ./test --fix",
+    "test": "mocha --require babel-core/register || exit 0"
   },
   "repository": {
     "type": "git",
