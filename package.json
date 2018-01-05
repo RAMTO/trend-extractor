@@ -1,6 +1,6 @@
 {
   "name": "trend-extractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NPM package that defines the most common words or trends",
   "main": "index.js",
   "scripts": {
