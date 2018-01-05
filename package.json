@@ -34,5 +34,6 @@
       "lcov",
       "text"
     ]
-  }
+  },
+  "prepublishOnly": "npm run build"
 }
