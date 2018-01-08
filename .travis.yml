@@ -12,3 +12,4 @@ deploy:
   on:
     tags: true
     repo: RAMTO/trend-extractor
+after_success: 'npm run coveralls'

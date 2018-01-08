@@ -7,7 +7,8 @@
     "build": "npm run lint && npm run test && babel ./src -d ./lib",
     "lint": "eslint ./src ./test",
     "lint-fix": "eslint ./src ./test --fix",
-    "test": "nyc mocha --require babel-core/register || exit 0"
+    "test": "nyc mocha --require babel-core/register || exit 0",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
