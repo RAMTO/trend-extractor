@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+before_deploy:
+- npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: martindobrev87@gmail.com
+  api_key:
+    secure: Uk0Lsl9FIe+qEn+OzwGG+N+BeVguxbL2raqS+d/y8n4LdV5B6eP3sJaUJ4ErNqhgQ36PgwCFiszETRdBNBUGYxiECskpbNXrzWYbox5UEAsrfUq5ZvDsllWe3t5TaJMbnE0N5vdExmgpjwGau8cV1++qfs4FBmeRxmEIV8HM1FHTRiVXxW85P+ufU+VNTXs3ni99LzTAjK3BCH0jCf7pnzikjMkWfu2JpT8UqQ9ZcpQIFFFQcLpF03bEGvaRFdIzw5ISnc0+8DepsxiEW8i0+q3xERl3E+pl9HE4amgPve4FNTDf/YtbBO9NJTk/drvoXEHmF9/cf6sFx9TIQFe43DeD55LcSBqJKaoVYkAIOV5UP6SxiVD6hgKoz/NqXRNVY//uKIx+yRnKz6d3kOBBXATmLrm4NmS8VphMoEUijJJr3n0LQ5gdxHwEkS7KgvyqXu5nGxxfS0AVT8gW8DPqAiSoVQy9rJRpUxBQgeXIwiEsqoe+vIxsNjMhi+umpo9N0tFPWULBZQ53t/U3I3mnjCfhnEHURQ28vzW3yZt7EBIaobRs/OtO2T/syd/iyZdCJ37J2BcknfffajDbCc3T4P8noPitHu0Hv4QALbk7YKpNYBJEAKUN0fHxLG8lNVRI/H+31a5aNf/N+bXH/L5xRig5vIgB+7E/JrnA36eGpiE=
+  on:
+    tags: true
+    repo: RAMTO/trend-extractor
